@@ -1,0 +1,6 @@
+[package]
+name = "features-2018-2"
+version = "0.1.0"
+authors = ["Arseniy Pendryak <arseniy.pendryak@jetbrains.com>"]
+
+[dependencies]
