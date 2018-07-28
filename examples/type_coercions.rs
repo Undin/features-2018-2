@@ -1,3 +1,5 @@
+// Simple example of type error quick fixes
+
 use std::num::ParseIntError;
 use std::borrow::Cow;
 
