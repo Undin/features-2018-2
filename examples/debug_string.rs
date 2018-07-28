@@ -1,15 +1,13 @@
 fn main() {
-    let s = concat(&["Hello", ", ", "World!"]);
-    println!("{}", s);
+    println!("{:?}", sorted_words("Rust is a systems programming language"));
 }
 
-fn concat(xs: &[&str]) -> String {
-    let mut result = String::new();
-    for s in xs {
-        if s.len() > 1 {
-            result.push_str(s);
-        }
-    }
-    return result;
+fn sorted_words(xs: &str) -> Vec<String> {
+    let mut words = xs.split_whitespace()
+        .map(|s| {
+            s.to_lowercase() // breakpoint
+        })
+        .collect::<Vec<String>>();
+    words.sort();
+    return words; // breakpoint
 }
-
