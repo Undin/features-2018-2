@@ -1,5 +1,5 @@
 use std::sync::Mutex;
 
 fn main() {
-    let counter = Rc::new(Mutex::new(0));
+    let counter = Arc::new(Mutex::new(0));
 }
